@@ -1,0 +1,22 @@
+{
+  "name": "ts-prj-confiured",
+  "version": "1.0.0",
+  "description": "Progetto ts vuoto gia configurato per l'uso di typescript, run, debug e test.",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "build": "tsc",
+    "dev": "nodemon src/index.ts",
+    "debug": "node --inspect-brk dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "ts-prj-confiured": "file:"
+  },
+  "devDependencies": {
+    "node": "^22.11.0",
+    "ts-node": "^10.9.2"
+  }
+}

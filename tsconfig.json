@@ -1,0 +1,109 @@
+{
+  "compilerOptions": {
+    /* Visita https://aka.ms/tsconfig per leggere di più su questo file */
+
+    /* Progetti */
+    // "incremental": true,                              /* Salva file .tsbuildinfo per permettere la compilazione incrementale dei progetti. */
+    // "composite": true,                                /* Abilita restrizioni che permettono l'uso di un progetto TypeScript con riferimenti ad altri progetti. */
+    // "tsBuildInfoFile": "./.tsbuildinfo",              /* Specifica il percorso del file di compilazione incrementale .tsbuildinfo. */
+    // "disableSourceOfProjectReferenceRedirect": true,  /* Disabilita la preferenza dei file sorgente rispetto ai file di dichiarazione quando si fa riferimento a progetti composti. */
+    // "disableSolutionSearching": true,                 /* Esclude un progetto dal controllo dei riferimenti multipli durante la modifica. */
+    // "disableReferencedProjectLoad": true,             /* Riduce il numero di progetti caricati automaticamente da TypeScript. */
+
+    /* Linguaggio e Ambiente */
+    "target": "es2016",                                  /* Imposta la versione del linguaggio JavaScript per il codice generato e include le dichiarazioni delle librerie compatibili. */
+    // "lib": [],                                        /* Specifica un insieme di file di dichiarazione di libreria che descrivono l'ambiente di runtime di destinazione. */
+    // "jsx": "preserve",                                /* Specifica quale codice JSX viene generato. */
+    // "experimentalDecorators": true,                   /* Abilita il supporto sperimentale per i decoratori sperimentali legacy. */
+    // "emitDecoratorMetadata": true,                    /* Genera metadati di tipo per dichiarazioni decorate nei file sorgente. */
+    // "jsxFactory": "",                                 /* Specifica la funzione di fabbrica JSX usata per l'emissione JSX di React, ad es. 'React.createElement' o 'h'. */
+    // "jsxFragmentFactory": "",                         /* Specifica il riferimento per i frammenti JSX quando si usa l'emissione JSX di React. */
+    // "jsxImportSource": "",                            /* Specifica il modulo usato per importare le funzioni di fabbrica JSX. */
+    // "reactNamespace": "",                             /* Specifica l'oggetto invocato per 'createElement' (valido solo per l'emissione JSX 'react'). */
+    // "noLib": true,                                    /* Disabilita l'inclusione di qualsiasi file di libreria, compreso il lib.d.ts predefinito. */
+    // "useDefineForClassFields": true,                  /* Emissione di campi di classe compatibili con lo standard ECMAScript. */
+    // "moduleDetection": "auto",                        /* Controlla quale metodo viene usato per rilevare i file in formato modulo JS. */
+
+    /* Moduli */
+    "module": "commonjs",                                /* Specifica quale codice modulo viene generato. */
+    // "rootDir": "./",                                  /* Specifica la cartella radice all'interno dei file sorgente. */
+    // "moduleResolution": "node10",                     /* Specifica come TypeScript individua un file da un dato specificatore di modulo. */
+    // "baseUrl": "./",                                  /* Specifica la directory di base per risolvere i nomi dei moduli non relativi. */
+    // "paths": {},                                      /* Specifica una serie di voci che reindirizzano le importazioni a posizioni di ricerca aggiuntive. */
+    // "rootDirs": [],                                   /* Permette a più cartelle di essere trattate come una durante la risoluzione dei moduli. */
+    // "typeRoots": [],                                  /* Specifica più cartelle che agiscono come './node_modules/@types'. */
+    // "types": [],                                      /* Specifica i pacchetti di tipo da includere senza fare riferimento in un file sorgente. */
+    // "allowUmdGlobalAccess": true,                     /* Consente l'accesso ai globali UMD dai moduli. */
+    // "moduleSuffixes": [],                             /* Elenco dei suffissi dei nomi file da cercare durante la risoluzione di un modulo. */
+    // "allowImportingTsExtensions": true,               /* Permette importazioni con estensioni dei file TypeScript. Richiede '--moduleResolution bundler' e '--noEmit' o '--emitDeclarationOnly' impostati. */
+    // "resolvePackageJsonExports": true,                /* Utilizza il campo 'exports' di package.json durante la risoluzione delle importazioni dei pacchetti. */
+    // "resolvePackageJsonImports": true,                /* Utilizza il campo 'imports' di package.json per la risoluzione delle importazioni. */
+    // "customConditions": [],                           /* Condizioni da impostare in aggiunta ai valori predefiniti per la risoluzione delle importazioni. */
+    // "resolveJsonModule": true,                        /* Abilita l'importazione di file .json. */
+    // "allowArbitraryExtensions": true,                 /* Abilita l'importazione di file con qualsiasi estensione, se presente un file di dichiarazione. */
+    // "noResolve": true,                                /* Impedisce a 'import', 'require' o '<reference>' di espandere il numero di file che TypeScript deve aggiungere a un progetto. */
+
+    /* Supporto JavaScript */
+    // "allowJs": true,                                  /* Consente ai file JavaScript di far parte del progetto. Usa 'checkJS' per ottenere errori da questi file. */
+    // "checkJs": true,                                  /* Abilita la segnalazione di errori nei file JavaScript sottoposti a controllo di tipo. */
+    // "maxNodeModuleJsDepth": 1,                        /* Specifica la profondità massima delle cartelle per il controllo dei file JavaScript in 'node_modules'. Valido solo con 'allowJs'. */
+
+    /* Emissione */
+    "outDir": "./dist",                                   /* Specifica una cartella di output per tutti i file generati. */
+    // "declaration": true,                              /* Genera file .d.ts da file TypeScript e JavaScript nel progetto. */
+    // "declarationMap": true,                           /* Crea mappe dei file per i file .d.ts. */
+    // "emitDeclarationOnly": true,                      /* Genera solo file .d.ts e non file JavaScript. */
+    // "sourceMap": true,                                /* Crea file di mappa del codice sorgente per i file JavaScript generati. */
+    // "inlineSourceMap": true,                          /* Include file di mappa del codice sorgente nel JavaScript generato. */
+    // "outFile": "./",                                  /* Specifica un file che raccoglie tutti i risultati in un file JavaScript. Se 'declaration' è attivo, raccoglie anche tutte le uscite .d.ts. */
+    // "removeComments": true,                           /* Disabilita l'emissione dei commenti. */
+    // "noEmit": true,                                   /* Disabilita l'emissione di file dalla compilazione. */
+    // "importHelpers": true,                            /* Consente l'importazione di funzioni di aiuto da tslib una volta per progetto, invece di includerle per file. */
+    // "importsNotUsedAsValues": "remove",               /* Specifica il comportamento di controllo/emissione per importazioni utilizzate solo come tipi. */
+    // "downlevelIteration": true,                       /* Emissione di JavaScript più conforme ma prolisso e meno performante per le iterazioni. */
+    // "sourceRoot": "",                                 /* Specifica il percorso principale per i debugger per trovare il codice sorgente di riferimento. */
+    // "mapRoot": "",                                    /* Specifica la posizione in cui il debugger deve individuare i file di mappa. */
+    // "inlineSources": true,                            /* Includi il codice sorgente nelle mappe del codice nel JavaScript generato. */
+    // "emitBOM": true,                                  /* Emissione di un BOM UTF-8 all'inizio dei file di output. */
+    // "newLine": "crlf",                                /* Imposta il carattere di nuova riga per i file di output. */
+    // "stripInternal": true,                            /* Disabilita l'emissione di dichiarazioni con '@internal' nei commenti JSDoc. */
+    // "noEmitHelpers": true,                            /* Disabilita la generazione di funzioni di supporto personalizzate come '__extends' nell'output compilato. */
+    // "noEmitOnError": true,                            /* Disabilita l'emissione dei file se vengono segnalati errori di controllo del tipo. */
+    // "preserveConstEnums": true,                       /* Disabilita l'eliminazione delle dichiarazioni 'const enum' nel codice generato. */
+    // "declarationDir": "./",                           /* Specifica la directory di output per i file di dichiarazione generati. */
+    // "preserveValueImports": true,                     /* Preserva i valori importati inutilizzati nell'output JavaScript. */
+
+    /* Vincoli di interoperabilità */
+    // "isolatedModules": true,                          /* Assicura che ogni file possa essere compilato senza fare affidamento su altri import. */
+    // "verbatimModuleSyntax": true,                     /* Non trasforma o elimina importazioni o esportazioni, assicurando che siano scritte nel formato del file di output in base all'impostazione 'module'. */
+    // "allowSyntheticDefaultImports": true,             /* Consente 'import x from y' quando un modulo non ha un'esportazione predefinita. */
+    "esModuleInterop": true,                             /* Emissione di JavaScript aggiuntivo per facilitare il supporto per l'importazione di moduli CommonJS. Abilita 'allowSyntheticDefaultImports' per compatibilità. */
+    // "preserveSymlinks": true,                         /* Disabilita la risoluzione dei collegamenti simbolici. */
+    "forceConsistentCasingInFileNames": true,            /* Assicura che il maiuscolo/minuscolo sia corretto negli import. */
+
+    /* Controllo dei tipi */
+    "strict": true,                                      /* Abilita tutte le opzioni di controllo dei tipi rigorose. */
+    // "noImplicitAny": true,                            /* Abilita la segnalazione di errore per espressioni e dichiarazioni con tipo implicito 'any'. */
+    // "strictNullChecks": true,                         /* Durante il controllo dei tipi, considera 'null' e 'undefined'. */
+    // "strictFunctionTypes": true,                      /* Durante l'assegnazione di funzioni, verifica la compatibilità dei parametri e dei valori di ritorno. */
+    // "strictBindCallApply": true,                      /* Verifica che gli argomenti per i metodi 'bind', 'call' e 'apply' corrispondano alla funzione originale. */
+    // "strictPropertyInitialization": true,             /* Controlla le proprietà della classe dichiarate ma non impostate nel costruttore. */
+    // "noImplicitThis": true,                           /* Abilita la segnalazione di errore quando 'this' ha tipo 'any'. */
+    // "useUnknownInCatchVariables": true,               /* Predefinisce le variabili catch come 'unknown' invece di 'any'. */
+    // "alwaysStrict": true,                             /* Assicura che 'use strict' sia sempre emesso. */
+    // "noUnusedLocals": true,                           /* Abilita la segnalazione di errore quando le variabili locali non vengono lette. */
+    // "noUnusedParameters": true,                       /* Genera un errore quando un parametro di funzione non viene letto. */
+    // "exactOptionalPropertyTypes": true,               /* Interpreta i tipi di proprietà opzionali come scritti, invece di aggiungere 'undefined'. */
+    // "noImplicitReturns": true,                        /* Abilita la segnalazione di errore per percorsi di codice che non restituiscono esplicitamente in una funzione. */
+    // "noFallthroughCasesInSwitch": true,               /* Abilita la segnalazione di errore per i casi senza blocco in istruzioni switch. */
+    // "noUncheckedIndexedAccess": true,                 /* Aggiunge 'undefined' a un tipo quando viene utilizzato un indice. */
+    // "noImplicitOverride": true,                       /* Assicura che i membri sovrascritti in classi derivate siano marcati con un modificatore di override. */
+    // "noPropertyAccessFromIndexSignature": true,       /* Impone l'uso di accessor per chiavi dichiarate con tipo indicizzato. */
+    // "allowUnusedLabels": true,                        /* Disabilita la segnalazione di errore per etichette non utilizzate. */
+    // "allowUnreachableCode": true,                     /* Disabilita la segnalazione di errore per codice non raggiungibile. */
+
+    /* Completezza */
+    // "skipDefaultLibCheck": true,                      /* Salta il controllo dei file .d.ts inclusi con TypeScript. */
+    "skipLibCheck": true                                 /* Salta il controllo dei tipi di tutti i file .d.ts. */
+  }
+}
